@@ -48,11 +48,11 @@
                 url: 'user_action.php',
                 data: { userId: userId, movieId: movieId, actionType: actionType },
                 success: function(response) {
-                    console.log(response); // İşlem başarılı ise geri dönen mesajı konsola yazdır
+                    console.log(response);
                     alert('İşlem başarıyla gerçekleştirildi.');
                 },
                 error: function(xhr, status, error) {
-                    console.error(error); // Hata durumunda konsola hata mesajını yazdır
+                    console.error(error);
                     alert('İşlem sırasında bir hata oluştu.');
                 }
             });
