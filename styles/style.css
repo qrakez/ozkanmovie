@@ -1,0 +1,91 @@
+body{
+    background-color: #17171b;
+}
+.main{
+    background-color: #232329;
+}
+.series-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.series-item:hover {
+    box-shadow: 0px 8px 16px #0000004d;
+}
+
+.series-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+.series-item img:hover{
+    opacity: 0.3;
+}
+.series-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+}
+
+.series-item:hover .series-detail {
+    opacity: 1;
+}
+
+.card-series-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-series-detail {
+    font-size: 16px;
+}
+
+.card-watch-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card-watch-btn:hover {
+    background-color: #0056b3;
+}
+.category-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.category {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #0056b3;
+}
